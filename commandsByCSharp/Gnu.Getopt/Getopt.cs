@@ -3,7 +3,7 @@
 /*
 /* Copyright (c) 1987-1997 Free Software Foundation, Inc.
 /* Java Port Copyright (c) 1998 by Aaron M. Renn (arenn@urbanophile.com)
-/* C#.NET Port Copyright (c) 2004 by Klaus Pr¸ckl (klaus.prueckl@aon.at)
+/* C#.NET Port Copyright (c) 2004 by Klaus PrÅEkl (klaus.prueckl@aon.at)
 /*
 /* This program is free software; you can redistribute it and/or modify
 /* it under the terms of the GNU Library General Public License as published 
@@ -426,7 +426,7 @@ namespace Gnu.Getopt
 	/// <author>Roland McGrath (roland@gnu.ai.mit.edu)</author>
 	/// <author>Ulrich Drepper (drepper@cygnus.com)</author>
 	/// <author>Aaron M. Renn (arenn@urbanophile.com)</author>
-	/// <author>Klaus Pr¸ckl (klaus.prueckl@aon.at)</author>
+	/// <author>Klaus PrÅEkl (klaus.prueckl@aon.at)</author>
 	/// <author>Sean M. Foy (sean.foy@gmail.com)</author>
 	/// <seealso cref="LongOpt">LongOpt</seealso>
 	public class Getopt

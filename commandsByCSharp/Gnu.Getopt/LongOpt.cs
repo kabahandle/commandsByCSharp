@@ -2,7 +2,7 @@
 /* LongOpt.cs -- C#.NET port of Long option object for Getopt
 /*
 /* Copyright (c) 1998 by Aaron M. Renn (arenn@urbanophile.com)
-/* C#.NET Port Copyright (c) 2004 by Klaus Pr¸ckl (klaus.prueckl@aon.at)
+/* C#.NET Port Copyright (c) 2004 by Klaus PrÅEkl (klaus.prueckl@aon.at)
 /*
 /* This program is free software; you can redistribute it and/or modify
 /* it under the terms of the GNU Library General Public License as published 
@@ -60,7 +60,7 @@ namespace Gnu.Getopt
 	/// </summary>
 	/// <seealso cref="Getopt">Getopt</seealso>
 	/// <author>Aaron M. Renn (arenn@urbanophile.com)</author>
-	/// <author>Klaus Pr¸ckl (klaus.prueckl@aon.at)</author>
+	/// <author>Klaus PrÅEkl (klaus.prueckl@aon.at)</author>
 	public class LongOpt
 	{
 		#region Instance Variables
