@@ -10,9 +10,10 @@ namespace safetee
 {
     class Program
     {
+        [STAThreadAttribute]
         static void Main(string[] args)
         {
-            Getopt g = new Getopt("columnconv", args, "?a:cf:sun");
+            Getopt g = new Getopt("safetee", args, "?a:cf:sun");
             int c;
             string arg;
             string inputFileName = string.Empty;
