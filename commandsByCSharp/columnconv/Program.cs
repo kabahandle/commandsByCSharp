@@ -44,7 +44,7 @@ namespace columnconv
             Getopt g = new Getopt("colconv.dll", args, "?d:e:h");
             int c;
             string arg;
-            string output_delim = string.Empty;
+            string output_delim = " ";
             string regexp = string.Empty;
             while ((c = g.getopt()) != -1)
             {
