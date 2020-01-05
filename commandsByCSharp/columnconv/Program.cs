@@ -41,7 +41,7 @@ namespace columnconv
             //            break;
             //    }
             //}
-            Getopt g = new Getopt("colconv.dll", args, "?d:e:h");
+            Getopt g = new Getopt("colconv.dll", args, "?d:e:hn");
             int c;
             string arg;
             string output_delim = " ";
@@ -69,6 +69,11 @@ namespace columnconv
                         //}
                         tabCount(ref output_delim);
                         crlfCount(ref output_delim);
+                        break;
+
+                    case 'n':
+                        // デリミタなし
+                        output_delim = string.Empty;
                         break;
 
                     case 'e':
