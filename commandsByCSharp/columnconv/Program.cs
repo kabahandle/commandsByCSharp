@@ -41,7 +41,7 @@ namespace columnconv
             //            break;
             //    }
             //}
-            Getopt g = new Getopt("colconv.dll", args, "?d:e:hn");
+            Getopt g = new Getopt("columnconv", args, "?d:e:hn");
             int c;
             string arg;
             string output_delim = " ";
@@ -111,7 +111,7 @@ namespace columnconv
             string ret = string.Empty;
             string[] tmp = null;
 
-            tmp = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            tmp = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
 
             ret = string.Join(column_delim, tmp);
 
