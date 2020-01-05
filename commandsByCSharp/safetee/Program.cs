@@ -12,7 +12,7 @@ namespace safetee
     {
         static void Main(string[] args)
         {
-            Getopt g = new Getopt("columnconv", args, "?a:cf:su");
+            Getopt g = new Getopt("columnconv", args, "?a:cf:sun");
             int c;
             string arg;
             string inputFileName = string.Empty;
@@ -20,6 +20,7 @@ namespace safetee
             bool isInputIsStdin = true;
             bool isCopyToClipboard = false;
             string lang = "Shift_JIS";
+            bool isNotSilentMode = true;
             while ((c = g.getopt()) != -1)
             {
                 switch (c)
@@ -39,7 +40,10 @@ namespace safetee
                         lang = "UTF-8";
                         break;
 
-
+                    case 'n':
+                        // サイレントモード
+                        isNotSilentMode = false;
+                        break;
 
                     case 'a':
                         // 追加書込出力先ファイル名
@@ -61,8 +65,11 @@ namespace safetee
                     default:
                     case '?':
                     case 'h':
-                        Console.WriteLine("c:\\>safetee [-c] [-a <追加書込ファイル>] [-f <読込先ファイル>] [< text.txt] ");
-                        Console.WriteLine("  -c : クリップボードにコピー。・");
+                        Console.WriteLine("c:\\>safetee [-c] [-n] [-s|-u] [-a <追加書込ファイル>] [-f <読込先ファイル>] [< text.txt] ");
+                        Console.WriteLine("  -c : クリップボードにコピー。");
+                        Console.WriteLine("  -n : 標準出力に出力しない。");
+                        Console.WriteLine("  -s : Shift_JISモード。");
+                        Console.WriteLine("  -u : UTF-8モード。");
                         return;
                         //break; // getopt() already printed an error
                 }
@@ -103,7 +110,10 @@ namespace safetee
 
                 while ((line = input.ReadLine()) != null)
                 {
-                    Console.WriteLine(line);
+                    if (isNotSilentMode)
+                    {
+                        Console.WriteLine(line);
+                    }
                     if (w != null)
                     {
                         w.WriteLine(line);
