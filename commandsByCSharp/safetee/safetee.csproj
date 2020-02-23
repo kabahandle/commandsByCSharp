@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Gnu.Getopt">
-      <HintPath>..\Gnu.Getopt\bin\Debug\Gnu.Getopt.dll</HintPath>
+      <HintPath>..\Gnu.Getopt\obj\Debug\Gnu.Getopt.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
