@@ -36,6 +36,9 @@
       <HintPath>..\Gnu.Getopt\obj\Debug\Gnu.Getopt.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>..\ndesk-options-0.2.1.bin\lib\ndesk-options\NDesk.Options.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
